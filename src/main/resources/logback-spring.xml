@@ -2,7 +2,7 @@
 
     <!-- Pull env variable from environment at runtime -->
     <springProperty name="POD_NAME" source="POD_NAME" defaultValue="unknown-pod"/>
-    <springProperty name="HOME_LOG" source="HOME_LOG" defaultValue="/var/log"/>
+    <springProperty name="HOME_LOG" source="HOME_LOGER" defaultValue="/var/log"/>
     <define name="CURRENT_DATE" class="org.ips.xml.signer.xmlsigner.configuration.CurrentDateDefiner"/>
     <!-- STDOUT Appender -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
